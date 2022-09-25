@@ -1,0 +1,58 @@
+ATM
+amount100 = n
+amount50 = n
+amount20 = n 
+amount10 = n
+
+rest = n
+
+userinput = n
+
+
+
+if (userinput > amount100 + amount50 + amount20 + amount 10 || userinput % 10 != (is not) 0 ){
+	cancel - Not enough money in the ATM or choose numbers divisible by 10}
+	else{
+		if ( userinput > 100 && amount100 > userinput / 100){
+			math.floor(userinput/100 = output100)
+			userinput - output100*100 = rest
+			userinput % 100 = rest(neue variable)
+			amount100 - output100
+			returns: output100, rest(eine der zwei formen), 									amount100(neu)
+			call recount notes;
+			}
+		else if(userinput > 50 && amount50 > userinput / 50){
+			math.floor(userinput/50 = output50)
+			userinput - output50*50 = rest
+			userinput % 50 = rest(neue variable)
+			amount50 - output50
+			returns: output50, rest(eine der zwei formen), 										amount50(neu)
+			call recount notes;
+		else if(userinput > 20 && amount20 > userinput / 20){
+			math.floor(userinput/20 = output20)
+			userinput - output20*20 = rest
+			userinput % 20 = rest(neue variable)
+			amount20 - output20
+			returns: output20, rest(eine der zwei formen), 										amount20(neu)
+			call recount notes;
+		else(userinput > 10 && amount10 > userinput / 10){
+			math.floor(userinput/10 = output10)
+			userinput - output10*10 = rest
+			userinput % 10 = rest(neue variable)
+			amount10 - output10
+			returns: output10, rest(eine der zwei formen), 				
+			amount10(neu)
+			call recount notes;
+
+
+function recountNotes(){
+		if(amount100 < 10 && amount50 <10 && amount20 < 10 && amount10 < 10){
+			print " missing 100s 50s 20s and 10s "}
+
+			else if( amount100 <10 && amount50 < 10 && amount20 <10){
+				print "missing 100s 50s and 20s"}
+			else if( amount100 < 10 && amount50 < 10){
+				print "missing 100s and 50s"}
+			else if(amount100 < 10) {
+				print "missing 100s"}
+			else (){};
